@@ -6,4 +6,4 @@ const student = {
 };
 
 document.getElementById("demo").innerHTML = 
-student.studentName + " có ID: " + student["iD"] + " và là 1 " + student.faculty;
+student["iD"] + "_" + student.studentName + "_" + student.faculty;
