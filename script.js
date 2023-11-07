@@ -1,11 +1,9 @@
 const student = {
+    iD: "21521060",
     studentName: "Lâm", 
-    iD: "2152",
-    job:"Super idol",
-    studentInfor: function () {
-        return "ID: " + this.iD + " là " + this.studentName + " hiện đang làm " + this.job + " như công việc bán thời gian";
-    }
+    faculty:"Computer engineering",
+    
 };
 
 document.getElementById("demo").innerHTML = 
-student.studentInfor();
+student.studentName + " có ID: " + student["iD"] + " và là 1 " + student.faculty;
