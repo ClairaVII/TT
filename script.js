@@ -1,2 +1,11 @@
-const staff = {Name: "Lâm", ID: "2152xxxx", job:"Super idol"};
-    document.getElementById("demo").innerHTML = staff.Name + " có ID: " + staff["ID"] + " và là 1 " + staff.job;
+const student = {
+    studentName: "Lâm", 
+    iD: "2152",
+    job:"Super idol",
+    studentInfor: function () {
+        return "ID: " + this.iD + " là " + this.studentName + " hiện đang làm " + this.job + " như công việc bán thời gian";
+    }
+};
+
+document.getElementById("demo").innerHTML = 
+student.studentInfor();
