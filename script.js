@@ -1,11 +1,9 @@
-const student = {
-    iD: "21521060",
-    studentName: "Lâm", 
-    faculty:"Computer engineering",
-    studentInfor: function () {
-        return this.iD + "_" + this.studentName + "_" + this.faculty;
+class PHANSO{
+    constructor(tuSo, mauSo){
+        this.tuSo = tuSo;
+        this.mauSo = mauSo;
     }
-};
+}
 
-document.getElementById("demo").innerHTML = 
-student.studentInfor();
+const phanSo = new PHANSO (2,4);
+document.getElementById("demo").innerHTML = phanSo.tuSo + "/" + phanSo.mauSo;
